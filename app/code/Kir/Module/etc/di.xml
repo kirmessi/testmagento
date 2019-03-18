@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Kir\Module\Block\Test">
+        <plugin name="kir_module_plugin_module_block_testplugin"
+                type="Kir\Module\Plugin\Module\Block\TestPlugin" sortOrder="10" />
+    </type>
+
+    <preference for="Kir\Module\Block\Test" type="Kir\Module\Block\TestSecond" />
+</config>
