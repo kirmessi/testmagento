@@ -1,0 +1,8 @@
+<?php
+
+$categoryId = 41;
+$categoryProducts = $block->getCategoryProducts($categoryId);
+foreach ($categoryProducts as $product) {
+
+    echo $product->getName().'<br />';
+}

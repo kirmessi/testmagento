@@ -1,0 +1,9 @@
+<?php
+
+$categories = $block->getCategoryCollection()
+->addAttributeToFilter('include_in_menu', 1);
+
+foreach ($categories as $category) {
+echo $category->getName() . '<br>';
+}
+
