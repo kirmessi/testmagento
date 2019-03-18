@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="product.info.main">
+            <block class="Kir\Module\Block\Test" name="testmessage" template="Kir_Module::testmessage.phtml" before="-" />
+        </referenceContainer>
+
+        <referenceContainer name="product.info.main">
+            <block class="Kir\Module\Block\Category" name="category" template="Kir_Module::category.phtml" before="-" />
+        </referenceContainer>
+
+        <referenceBlock name="product.info.social">
+            <block class="Kir\Module\Block\Test" name="oopsmessage" template="Kir_Module::oopsmessage.phtml" after="-" />
+        </referenceBlock>
+
+        <referenceContainer name="product.info.social">
+            <block class="Kir\Module\Block\Test" name="hellomessage" template="Kir_Module::hellomessage.phtml" before="-" />
+        </referenceContainer>
+
+        <referenceContainer name="product.info.stock.sku">
+                <block class="Kir\Module\Block\Test" name="buymessage" template="Kir_Module::buymessage.phtml" after="-" />
+        </referenceContainer>
+
+        <referenceContainer name="product.info.stock.sku">
+            <block class="Kir\Module\Block\Product" name="product" template="Kir_Module::product.phtml" after="-" />
+        </referenceContainer>
+    </body>
+</page>
