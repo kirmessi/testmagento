@@ -6,4 +6,5 @@
     </type>
 
     <preference for="Kir\Module\Block\Test" type="Kir\Module\Block\TestSecond" />
+
 </config>
