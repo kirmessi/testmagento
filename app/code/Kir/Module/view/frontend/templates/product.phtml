@@ -1,7 +1,20 @@
 <?php
 
 $categoryProducts = $block->getCategoryProducts();
+$testtable = $block->getTableData();
 foreach ($categoryProducts as $product) {
 
     echo $product->getName().'<br />';
-}
+}?>
+
+<table style="border: solid 1px;">
+  <tr style="border: solid 1px;"><th style="border: solid 1px;">Title</th><th>Description</th></tr>
+  <?php foreach ($testtable as $test) { ?>
+  <tr style="border: solid 1px;">
+      <td style="border: solid 1px;"><?php echo $test->getData('title').'<br />';?></td>
+      <td><?php echo $test->getData('content').'<br />';?></td>
+  </tr>
+  <?php } ?>
+</table>
+
+
