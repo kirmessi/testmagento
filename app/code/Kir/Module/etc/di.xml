@@ -4,7 +4,7 @@
         <plugin name="kir_module_plugin_module_block_testplugin"
                 type="Kir\Module\Plugin\Module\Block\TestPlugin" sortOrder="10" />
     </type>
-
+    <preference for="Magento\Cms\Helper\Wysiwyg\Images" type="Kir\Module\Helper\Wysiwyg\Images" />
     <preference for="Kir\Module\Block\Test" type="Kir\Module\Block\TestSecond" />
 
 </config>

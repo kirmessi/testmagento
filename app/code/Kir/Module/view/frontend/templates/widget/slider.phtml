@@ -1,34 +1,23 @@
-<section class="vertical-center slider">
-    <div>
-        <img src="http://placehold.it/350x100?text=1">
-    </div>
-    <div>
-        <img src="http://placehold.it/350x100?text=2">
-    </div>
-    <div>
-        <img src="http://placehold.it/350x100?text=3">
-    </div>
-    <div>
-        <img src="http://placehold.it/350x100?text=4">
-    </div>
-    <div>
-        <img src="http://placehold.it/350x100?text=5">
-    </div>
-    <div>
-        <img src="http://placehold.it/350x100?text=6">
-    </div>
-    <div>
-        <img src="http://placehold.it/350x100?text=7">
-    </div>
-    <div>
-        <img src="http://placehold.it/350x100?text=8">
-    </div>
-    <div>
-        <img src="http://placehold.it/350x100?text=9">
-    </div>
-    <div>
-        <img src="http://placehold.it/350x100?text=10">
-    </div>
+<section class="slider">
+    <h3>Slider Widget</h3>
+    <?php
+    $imageCount = $block->getData('slides');
+    $imageChooser = $block->getData('images');
+    if (count($imageCount) > 0) {
+        ?>
+        <div class="vertical-center">
+            <?php
+            for ($i = 0; $i < $imageCount; $i++) {
+                ?>
+                <div><img src="<?php echo $imageChooser;?>"></div>
+                <?php
+            }
+            ?>
+        </div>
+        <?php
+    }
+    ?>
+
 </section>
 
 
@@ -36,7 +25,7 @@
     require(['jquery','slick'],function($){
         $(".vertical-center").slick({
             dots: true,
-            vertical: true,
+            vertical: false,
             centerMode: true,
         });
     });

@@ -11,7 +11,7 @@ class UpgradeSchema implements UpgradeSchemaInterface
     $installer = $setup;
 
     $installer->startSetup();
-    if(version_compare($context->getVersion(), '2.2.0', '<=')) {
+    if(version_compare($context->getVersion(), '2.2.1', '<=')) {
       $table = $installer->getConnection()
         ->newTable($installer->getTable('a_custom_magento'))
         ->addColumn(

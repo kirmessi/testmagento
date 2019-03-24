@@ -1,6 +1,6 @@
 var config = {
     "paths": {
-            "slick": "Kir_Module/js/smoothscroll"
+            "slick": "Kir_Module/js/slick"
         },
     shim:{
         'slick':{
