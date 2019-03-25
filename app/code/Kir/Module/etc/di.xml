@@ -4,7 +4,9 @@
         <plugin name="kir_module_plugin_module_block_testplugin"
                 type="Kir\Module\Plugin\Module\Block\TestPlugin" sortOrder="10" />
     </type>
-    <preference for="Magento\Cms\Helper\Wysiwyg\Images" type="Kir\Module\Helper\Wysiwyg\Images" />
+    <type name="Magento\Widget\Model\Widget">
+        <plugin name="urlpath" type="Kir\Module\Model\Widget" sortOrder="1" disabled="false"/>
+    </type>
     <preference for="Kir\Module\Block\Test" type="Kir\Module\Block\TestSecond" />
 
 </config>

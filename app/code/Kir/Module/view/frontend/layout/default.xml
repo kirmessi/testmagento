@@ -2,6 +2,5 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
         <css src="Kir_Module/css/slick.css"/>
-        <link src="Kir_Module/js/slick.js"/>
     </head>
 </page>

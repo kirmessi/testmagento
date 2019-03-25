@@ -5,7 +5,7 @@
     $imageChooser = $block->getData('images');
     if (count($imageCount) > 0) {
         ?>
-        <div class="vertical-center">
+        <div class="vertical-center" data-mage-init='{"init": {}}'>
             <?php
             for ($i = 0; $i < $imageCount; $i++) {
                 ?>
@@ -21,12 +21,3 @@
 </section>
 
 
-<script type="text/javascript">
-    require(['jquery','slick'],function($){
-        $(".vertical-center").slick({
-            dots: true,
-            vertical: false,
-            centerMode: true,
-        });
-    });
-</script>
