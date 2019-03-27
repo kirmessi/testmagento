@@ -3,5 +3,29 @@
  * @var \Kir\Module\Block\Test $block
  */
 
-echo $block->testmessage("Hello, Kir");
+echo $block->testmessage("Hello, Kir");?>
+<div class="form-test" data-bind="scope:'library'">
 
+<form class="jsknout" id="test-jsknout" >
+  <p><b>Ваше имя:</b><br>
+   <input type="text" name="name"  id="knoutname" size="40">
+  </p>
+  <span id="firstknout" ></span>
+  <span id="secondknout"></span>
+    <div class="emipro-knockout-data-bind-example" data-bind="text:getText()"></div>
+    <button type="button" data-bind="click: onSubmit" class="action">Send</button>
+ </form>
+</div>
+<script type="text/x-magento-init">
+        {
+            "*": {
+                "Magento_Ui/js/core/app": {
+                    "components": {
+                        "library": {
+                            "component": "Kir_Module/js/library"
+                        }
+                    }
+                }
+            }
+        }
+</script>
