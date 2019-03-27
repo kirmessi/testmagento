@@ -7,6 +7,20 @@
     <type name="Magento\Widget\Model\Widget">
         <plugin name="urlpath" type="Kir\Module\Model\Widget" sortOrder="1" disabled="false"/>
     </type>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="table_listing_data_source" xsi:type="string">Kir\Module\Model\ResourceModel\TestModel\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Kir\Module\Model\ResourceModel\TestModel\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">a_custom_magento</argument>
+            <argument name="eventPrefix" xsi:type="string">a_custom_magento_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">a_custom_magento_grid_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Kir\Module\Model\ResourceModel\TestModel</argument>
+        </arguments>
+    </type>
     <preference for="Kir\Module\Block\Test" type="Kir\Module\Block\TestSecond" />
-
 </config>
