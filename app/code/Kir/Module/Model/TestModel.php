@@ -7,6 +7,6 @@
  class TestModel extends AbstractModel {
 
    protected function _construct() {
-     $this->_init('kir\Module\Model\ResourceModel\TestModel');
+     $this->_init('Kir\Module\Model\ResourceModel\TestModel');
    }
  }

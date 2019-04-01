@@ -19,7 +19,7 @@
             <dep>table_listing.table_listing_data_source</dep>
         </deps>
     </settings>
-    <dataSource name="kir_module_table_source" component="Magento_Ui/js/grid/provider">
+    <dataSource name="table_listing_data_source" component="Magento_Ui/js/grid/provider">
         <settings>
             <storageConfig>
                 <param name="indexField" xsi:type="string">id</param>
